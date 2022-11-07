@@ -17,14 +17,14 @@ First build the project using shell script provided
 ./build.sh
 ```
 
-Start the webserver(on port 8000) using the script provided
+Start the webserver on the desired port using the script provided
 
 ```
-./start.sh
+./start.sh <PORT>
 ```
 
 Open up a browser and search for the file, for example-
 
 ```
-localhost:8000/web/index.html
+localhost:<PORT>/web/index.html
 ```

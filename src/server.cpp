@@ -1,10 +1,15 @@
 #include "serversocket.hpp"
 #include "utils.hpp"
 
-int main(){
+int main(int argc, char ** argv){
+    if(argc != 2){
+        std::cout << "USAGE: ./server PORTNO." << std::endl;
+        return 1;
+    }
+    int port = atoi(argv[1]);
     ServerSocket sock;
     sock.OpenSocket();
-    sock.ConfigureSocket(8000);
+    sock.ConfigureSocket(port);
     sock.BindtoAddr();
     sock.ListenForConnect(20);
     sockaddr_in cliaddr;
