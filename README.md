@@ -1,7 +1,7 @@
 Webserver From Scratch
 ========================
 # What is this?
-This is a simple webserver written in C++ using unix sockets. It can server html pages(no css or js files supported yet).
+This is a simple webserver written in C++ using unix sockets. It can serve html pages(no css or js files supported yet).
 
 # How to use?
 
